@@ -13,8 +13,7 @@ def readFile(file_name):
 # to find given letter in the map and return map back to main
 def findCharacter(word,letter,map):
     for i in range(len(word)):
-        if word[i] == letter:
-            map[i] = letter
+        if word[i] == letter:   map[i] = letter
     return map
             
     
@@ -26,10 +25,8 @@ def main():
     wordLen = len(word)
 
     # conflicts in team
-    if wordLen < 5:
-        lives = 5
-    else:
-        lives = wordLen
+    if wordLen < 5:     lives = 5
+    else:               lives = wordLen
 
     map = list([])
 
